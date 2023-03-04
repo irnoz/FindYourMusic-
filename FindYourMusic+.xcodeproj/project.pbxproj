@@ -60,7 +60,7 @@
 				A8830DEB29AF5E4C00AFD1A9 /* FindYourMusic_App.swift */,
 				A8830DED29AF5E4C00AFD1A9 /* ContentView.swift */,
 				A8830DEF29AF5E4E00AFD1A9 /* Assets.xcassets */,
-				A89C608E29B39B950072070A /* New Group */,
+				A89C608E29B39B950072070A /* Models */,
 				A8830DF129AF5E4E00AFD1A9 /* Preview Content */,
 			);
 			path = "FindYourMusic+";
@@ -74,14 +74,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A89C608E29B39B950072070A /* New Group */ = {
+		A89C608E29B39B950072070A /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				A8830DFD29B301E400AFD1A9 /* ArtworkLoader.swift */,
 				A8830DFF29B301E500AFD1A9 /* DataModel.swift */,
 				A8830DFE29B301E500AFD1A9 /* SongListViewModel.swift */,
 			);
-			path = "New Group";
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

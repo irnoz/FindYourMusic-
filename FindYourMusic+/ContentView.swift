@@ -96,8 +96,7 @@ struct SearchBar: UIViewRepresentable {
         return searchBar
     }
     
-    func updateUIView(_ uiView: UISearchBar, context: Context) {
-    }
+    func updateUIView(_ uiView: UISearchBar, context: Context) { }
     
     func makeCoordinator() -> SearchBarCoordinator {
         return SearchBarCoordinator(searchTerm: $searchTerm)
@@ -112,7 +111,7 @@ struct SearchBar: UIViewRepresentable {
         
         func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
             searchTerm = searchBar.text ?? ""
-            UIApplication.shared.windows.first { $0.isKeyWindow }?.endEditing(true) //UIWindowScene.windows
+            UIApplication.shared.windows.first { $0.isKeyWindow }?.endEditing(true) // UIWindowScene.windows
         }
     }
 }
