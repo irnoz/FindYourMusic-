@@ -55,7 +55,7 @@ struct ArtworkView: View {
             if image != nil {
                 image
             } else {
-                Color(.systemIndigo)
+                Color(.systemBlue)
                 Image(systemName: "music.note")
                     .font(.largeTitle)
                     .foregroundColor(.white)
@@ -74,12 +74,12 @@ struct EmptyStateView: View {
             Image(systemName: "music.note")
                 .font(.system(size: 85))
                 .padding(.bottom)
-            Text("Start searching for music...")
+            Text("Searching for music...")
                 .font(.title)
             Spacer()
         }
         .padding()
-        .foregroundColor(Color(.systemIndigo))
+        .foregroundColor(Color(.systemBlue))
     }
 }
 
