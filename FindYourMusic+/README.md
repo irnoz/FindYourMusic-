@@ -2,4 +2,5 @@ This is an app that allows you find any music(provided by itunes API) by song, a
 
 here is a little preview:
 
-![Simulator Screen Shot - iPhone 14 Pro - 2023-03-04 at 21 11 38](https://user-images.githubusercontent.com/58843342/222919634-4caf87eb-519f-48a1-b0cf-755e3c15420d.png)
+![Simulator Screen Shot - iPhone 14 Pro - 2023-03-04 at 21 18 17](https://user-images.githubusercontent.com/58843342/222920004-62f3b1a0-0025-4716-b2df-c34fe6fec465.png)
+
