@@ -24,7 +24,7 @@ struct ContentView: View {
                     .listStyle(PlainListStyle())
                 }
             }
-            .navigationBarTitle("Music Search")
+            .navigationBarTitle("FindYourMusic")
         }
     }
 }
