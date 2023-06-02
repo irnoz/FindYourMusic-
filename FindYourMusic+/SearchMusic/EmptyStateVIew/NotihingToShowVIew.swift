@@ -1,5 +1,5 @@
 //
-//  EmptyStateView.swift
+//  NotihingToShowVIew.swift
 //  FindYourMusic+
 //
 //  Created by Irakli Nozadze on 02.06.23.
@@ -7,16 +7,19 @@
 
 import SwiftUI
 
-struct EmptyStateView: View {
+struct NotihingToShowVIew: View {
     var body: some View {
         VStack {
             Spacer()
-//            Image(systemName: "music.note")
-            Image(systemName: "magnifyingglass")
+            Image(systemName: "questionmark")
                 .font(.system(size: 85))
                 .padding(.bottom)
-            Text("Searching for music...")
+            Text("Notihing Found")
                 .font(.title)
+//                .padding(.all)
+            Text("Try typeing something else")
+                .font(.caption)
+//                .padding(.top)
             Spacer()
         }
         .padding()
@@ -24,8 +27,8 @@ struct EmptyStateView: View {
     }
 }
 
-struct EmptyStateView_Previews: PreviewProvider {
+struct NotihingToShowVIew_Previews: PreviewProvider {
     static var previews: some View {
-        EmptyStateView()
+        NotihingToShowVIew()
     }
 }

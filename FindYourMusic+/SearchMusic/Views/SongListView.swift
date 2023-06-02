@@ -19,8 +19,9 @@ struct SongListView: View {
 }
 
 struct SongListView_Previews: PreviewProvider {
-    static var viewModel = SongListViewModel().songs
+    
     static var previews: some View {
         SongListView(viewModel: SongListViewModel())
+//        SongListView(viewModel: SongListViewModel().generateSongs())
     }
 }

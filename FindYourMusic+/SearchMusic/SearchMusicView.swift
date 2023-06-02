@@ -16,12 +16,16 @@ struct SearchMusicView: View {
             VStack {
                 SearchBar(searchTerm: $viewModel.searchTerm)
                 if viewModel.songs.isEmpty {
-                    EmptyStateView()
+                    if viewModel.searchTerm.isEmpty {
+                        EmptyStateView()
+                    } else {
+                        NotihingToShowVIew()
+                    }
                 } else {
                     SongListView(viewModel: viewModel)
                 }
             }
-            .navigationBarTitle("FindYourMusic+")
+            .navigationBarTitle("Search Music")
         }
     }
 }

@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Music_SearchApp: App {
+    @AppStorage("appearance") var appearance: Appearance = .automatic
+    
     var body: some Scene {
         WindowGroup {
-            SearchMusicView(viewModel: SongListViewModel())
+            HomeView()
+                .preferredColorScheme(appearance.getColorScheme())
         }
     }
 }

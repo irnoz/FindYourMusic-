@@ -38,7 +38,7 @@ class DataModel {
             URLQueryItem(name: "term", value: searchTerm),
             URLQueryItem(name: "entity", value: "song"),
         ]
-        var components = URLComponents(string: "https://itunes.apple.com/search")
+        var components = URLComponents(string: "https://itunes.apple.com/search") // https://itunes.apple.com/search/term-Swans/entity-song
         components?.queryItems = queryItems
         
         return components?.url
