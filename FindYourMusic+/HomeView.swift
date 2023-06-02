@@ -20,7 +20,25 @@ struct HomeView: View {
                     }
                 })
                 .tag(0)
-            
+
+            FavouritesView()
+                .tabItem({
+                    VStack {
+                        Image(systemName: "heart.fill")
+                        Text("Favourites")
+                    }
+                })
+                .tag(1)
+
+            HistoryView()
+                .tabItem({
+                    VStack {
+                        Image(systemName: "book.fill")
+                        Text("History")
+                    }
+                })
+                .tag(2)
+
             SettingsView()
                 .tabItem({
                     VStack {
@@ -28,7 +46,7 @@ struct HomeView: View {
                         Text("Settings")
                     }
                 })
-                .tag(2)
+                .tag(3)
         }
         .accentColor(Color(.systemPurple))
     }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ArtworkView: View {
     let image: Image?
-    
+
     var body: some View {
         ZStack {
             if image != nil {

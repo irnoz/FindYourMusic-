@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SongListView: View {
     @ObservedObject var viewModel: SongListViewModel
-    
+
     var body: some View {
         List(viewModel.songs) { song in
             SongView(song: song)
@@ -19,7 +19,7 @@ struct SongListView: View {
 }
 
 struct SongListView_Previews: PreviewProvider {
-    
+
     static var previews: some View {
         SongListView(viewModel: SongListViewModel())
 //        SongListView(viewModel: SongListViewModel().generateSongs())

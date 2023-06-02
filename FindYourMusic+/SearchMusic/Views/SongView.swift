@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SongView: View {
     @ObservedObject var song: SongViewModel
-    
+
     var body: some View {
         HStack {
             ArtworkView(image: song.artwork)
@@ -27,7 +27,7 @@ struct SongView: View {
 
 struct SongView_Previews: PreviewProvider {
     static var viewModel = SongListViewModel()
-    
+
     static var previews: some View {
         SongView(
             song: SongViewModel(

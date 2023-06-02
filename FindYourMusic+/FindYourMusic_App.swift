@@ -8,9 +8,9 @@
 import SwiftUI
 
 @main
-struct Music_SearchApp: App {
+struct MusicSearchApp: App {
     @AppStorage("appearance") var appearance: Appearance = .automatic
-    
+
     var body: some Scene {
         WindowGroup {
             HomeView()

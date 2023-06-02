@@ -22,6 +22,8 @@
 		A8FCD4E22A2A1DE4003137B7 /* NotihingToShowVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FCD4E12A2A1DE4003137B7 /* NotihingToShowVIew.swift */; };
 		A8FCD4E42A2A2287003137B7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FCD4E32A2A2287003137B7 /* SettingsView.swift */; };
 		A8FCD4E82A2A22ED003137B7 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FCD4E72A2A22ED003137B7 /* Appearance.swift */; };
+		A8FCD4EB2A2A29AD003137B7 /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FCD4EA2A2A29AD003137B7 /* FavouritesView.swift */; };
+		A8FCD4EE2A2A29EA003137B7 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FCD4ED2A2A29EA003137B7 /* HistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		A8FCD4E12A2A1DE4003137B7 /* NotihingToShowVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotihingToShowVIew.swift; sourceTree = "<group>"; };
 		A8FCD4E32A2A2287003137B7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		A8FCD4E72A2A22ED003137B7 /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		A8FCD4EA2A2A29AD003137B7 /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
+		A8FCD4ED2A2A29EA003137B7 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,11 +77,13 @@
 		A8830DEA29AF5E4C00AFD1A9 /* FindYourMusic+ */ = {
 			isa = PBXGroup;
 			children = (
-				A8FCD4E62A2A22D7003137B7 /* Utils */,
 				A8FCD4DF2A2A1550003137B7 /* HomeView.swift */,
 				A8830DEB29AF5E4C00AFD1A9 /* FindYourMusic_App.swift */,
-				A8FCD4E52A2A228E003137B7 /* SettingsView */,
 				A8FCD4D62A29E956003137B7 /* SearchMusic */,
+				A8FCD4E92A2A29A0003137B7 /* Favourites */,
+				A8FCD4EC2A2A29DB003137B7 /* History */,
+				A8FCD4E52A2A228E003137B7 /* SettingsView */,
+				A8FCD4E62A2A22D7003137B7 /* Utils */,
 				A8830DF129AF5E4E00AFD1A9 /* Preview Content */,
 				A8FCD4D12A29E68C003137B7 /* Assets.xcassets */,
 			);
@@ -104,7 +110,6 @@
 		A8FCD4D62A29E956003137B7 /* SearchMusic */ = {
 			isa = PBXGroup;
 			children = (
-				A8FCD4DB2A29EC4A003137B7 /* EmptyStateVIew */,
 				A89C608E29B39B950072070A /* Models */,
 				A8FCD4DE2A29EFB9003137B7 /* Views */,
 				A8830DFE29B301E500AFD1A9 /* SongListViewModel.swift */,
@@ -125,6 +130,7 @@
 		A8FCD4DE2A29EFB9003137B7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A8FCD4DB2A29EC4A003137B7 /* EmptyStateVIew */,
 				A8FCD4D72A29E9AB003137B7 /* SongView.swift */,
 				A8FCD4D92A29E9B6003137B7 /* ArtworkView.swift */,
 				A8FCD4DC2A29EF9C003137B7 /* SongListView.swift */,
@@ -148,6 +154,22 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		A8FCD4E92A2A29A0003137B7 /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				A8FCD4EA2A2A29AD003137B7 /* FavouritesView.swift */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
+		A8FCD4EC2A2A29DB003137B7 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				A8FCD4ED2A2A29EA003137B7 /* HistoryView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,6 +180,7 @@
 				A8830DE429AF5E4C00AFD1A9 /* Sources */,
 				A8830DE529AF5E4C00AFD1A9 /* Frameworks */,
 				A8830DE629AF5E4C00AFD1A9 /* Resources */,
+				A8FCD4EF2A2A4E94003137B7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -213,6 +236,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A8FCD4EF2A2A4E94003137B7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A8830DE429AF5E4C00AFD1A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -225,11 +268,13 @@
 				A8FCD4E82A2A22ED003137B7 /* Appearance.swift in Sources */,
 				A8830E0129B301E500AFD1A9 /* DataModel.swift in Sources */,
 				A8FCD4E22A2A1DE4003137B7 /* NotihingToShowVIew.swift in Sources */,
+				A8FCD4EE2A2A29EA003137B7 /* HistoryView.swift in Sources */,
 				A8FCD4D82A29E9AB003137B7 /* SongView.swift in Sources */,
 				A8830E0229B301E500AFD1A9 /* SongListViewModel.swift in Sources */,
 				A8830E0029B301E500AFD1A9 /* ArtworkLoader.swift in Sources */,
 				A8FCD4E42A2A2287003137B7 /* SettingsView.swift in Sources */,
 				A8FCD4DD2A29EF9C003137B7 /* SongListView.swift in Sources */,
+				A8FCD4EB2A2A29AD003137B7 /* FavouritesView.swift in Sources */,
 				A8830DEC29AF5E4C00AFD1A9 /* FindYourMusic_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

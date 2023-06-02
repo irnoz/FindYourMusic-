@@ -9,12 +9,13 @@ import SwiftUI
 
 struct SettingsView: View {
     @AppStorage("appearance") var appearance: Appearance = .automatic
-    
+    @AppStorage("favourites") var showFavourites = false
+
     var body: some View {
         List {
             Text("Settings")
                 .font(.largeTitle)
-            
+
             Section(header: Text("Appearance")) {
                 Picker("", selection: $appearance) {
                     ForEach(Appearance.allCases) { appearance in
@@ -22,6 +23,12 @@ struct SettingsView: View {
                     }
                 }
                 .pickerStyle(SegmentedPickerStyle())
+            }
+
+            Section(header: Text("Favourites")) {
+                Toggle(isOn: $showFavourites) {
+                    Text("Show Favourites")
+                }
             }
         }
     }
